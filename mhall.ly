@@ -1,7 +1,7 @@
 \header 
 {
   title = "Mary Had a Little Lamb"
-  composer = "Your Mom."
+  composer = "Sarah Josepha Hale"
 }
 {
 	\time 4/4
