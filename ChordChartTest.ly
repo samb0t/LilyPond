@@ -1,8 +1,10 @@
 \version "2.18.2" 
+\score {
+\midi { }
 <<
     \new ChordNames {
       \chordmode {
-       c1 | f1 | g | c
+       c1 | f1 | g | e
        }
     }
     \new FretBoards {
@@ -20,3 +22,4 @@
       }
     }
 >>
+}
