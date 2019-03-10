@@ -35,7 +35,7 @@ chorusMelody = {
 
         d2   d4:sus4   d   d2        d:sus4   c:9   d
         d2   d4:sus4   d   d2        d:sus4   c:9   d
-        g2   d         g   a4:sus4   a:min
+        g2   d         g   a4:sus4   a
 
         b1:min     b2:min    b2:min/a
         g1         fis2:sus4 fis
@@ -46,7 +46,7 @@ chorusMelody = {
 
         d2   d4:sus4   d   d2        d:sus4   c:9   d
         d2   d4:sus4   d   d2        d:sus4   c:9   d
-        g2   d         g    a4:sus4   a
+        g2   d         g   a4:sus4   a
         d2   g:6/d     d1
 
     }
