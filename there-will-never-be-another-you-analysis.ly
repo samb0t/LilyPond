@@ -3,6 +3,7 @@
 \header {
     title = "There Will Never Be Another You"
     composer = "Leo Bottoni - analysis"
+    tagline = " "
 }
 
 allChords = \chordmode {
@@ -72,6 +73,9 @@ allChords = \chordmode {
       s s s s \break
       s s s s \break
     }
-    \new Lyrics \lyricmode { \markup "I" "ii" "V7" 1 }
+    \new Lyrics \lyricmode
+    {
+        \markup "I" " " "♭vii♭5" 1
+    }
   >>
 }
