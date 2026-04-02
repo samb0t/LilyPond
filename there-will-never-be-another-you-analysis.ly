@@ -7,7 +7,7 @@
 }
 
 allChords   =   \chordmode   {
-    ees1:maj7    s1       des1:m7.5-   g1:7
+    ees1:maj7    s1       d1:m7.5-     g1:7
     c1:m7        s1       bes:m7       ees1:7
     aes1:maj7    des1:9   ees1:maj7    c1:m7
     f1:7         s1       f1:m7        bes1:7
@@ -17,6 +17,7 @@ allChords   =   \chordmode   {
     ees2:maj7    d2:7     g2:min7      c2:7
     f2:min7      bes2:7   ees2         bes2:7
 }
+
 \paper {
     system-system-spacing = #'(
         (basic-distance . 15)
@@ -37,20 +38,24 @@ allChords   =   \chordmode   {
 
       % spacer notes to give the staff rhythm
       s1 s s s \break
-      s s s s \break 
-      s s s s \break
-      s s s s \break
-      s s s s \break
-      s s s s \break
-      s s s s \break
-      s s s s \break
+      s  s s s \break
+      s  s s s \break
+      s  s s s \break
+      s  s s s \break
+      s  s s s \break
+      s  s s s \break
+      s  s s s \break
     }
 
-    \new Lyrics \lyricmode
-    {
-       "I"       "   "   "♭vii♭5"   "?"
-       "ii/iv"   "   "   "iv"       "V/IV"
-       "I/IV"    " V "   "I"        "?"
+    \new Lyrics \lyricmode {
+       "I"       "   "   "ii/vi"    "V/vi"
+       "vi"      "   "   "ii/IV"    "V/IV"
+       "IV"      " ? "   "I"        "ii/V"
+       "V/V"     "   "   "?"        "?"
+       "?"       " "     "?"        "?"
+       "?"       " "     "?"        "?"
+       "?"       "?"     "?"        "?"
+       "?"       "?"     "?"        "?"
     }
   >>
 }
