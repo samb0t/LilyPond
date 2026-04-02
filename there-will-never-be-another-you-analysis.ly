@@ -18,6 +18,17 @@ allChords   =   \chordmode   {
     f2:min7      bes2:7   ees2         bes2:7
 }
 
+timing = {
+  s1 s1 s1 s1 \break
+  s1 s1 s1 s1 \break
+  s1 s1 s1 s1 \break
+  s1 s1 s1 s1 \break
+  s1 s1 s1 s1 \break
+  s1 s1 s1 s1 \break
+  s1 s1 s1 s2 s2 \break
+  s2 s2 s2 s2 s2 s2 s2 s2
+}
+
 \paper {
     system-system-spacing = #'(
         (basic-distance . 15)
@@ -35,27 +46,23 @@ allChords   =   \chordmode   {
       \clef "treble"
       \key ees \major
       \time 4/4
+      \override StaffSymbol.line-count = #0
 
-      % spacer notes to give the staff rhythm
-      s1 s s s \break
-      s  s s s \break
-      s  s s s \break
-      s  s s s \break
-      s  s s s \break
-      s  s s s \break
-      s  s s s \break
-      s  s s s \break
+      \new Voice = "aligner" {
+          \timing
+      }
+
     }
 
     \new Lyrics \lyricmode {
-       "I"       "   "   "ii/vi"    "V/vi"
-       "vi"      "   "   "ii/IV"    "V/IV"
-       "IV"      " ? "   "I"        "ii/V"
-       "V/V"     "   "   "?"        "?"
-       "?"       " "     "?"        "?"
-       "?"       " "     "?"        "?"
-       "?"       "?"     "?"        "?"
-       "?"       "?"     "?"        "?"
+       "I"   ""  ""  ""  "ii/vi" ""  "V/vi" ""
+       "vi"  ""  ""  ""  "ii/IV" ""   "V/IV" ""
+       "IV"  ""  "?" ""  "I"     ""   "ii/V" ""
+       "V/V" ""  ""  ""  "?"     ""   "?" ""
+       "?"   ""  ""  ""  "?"     ""   "?" ""
+       "?"   ""  ""  ""  "?"     ""   "?" ""
+       "?"   ""  "?" ""  "?"     ""   "?" "?"
+       "?"   "?" "?" "?" "?"     "?"  "?"  "?"
     }
   >>
 }
