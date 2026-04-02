@@ -1,5 +1,9 @@
 \version "2.24.2"
 
+% →	266D ♭ music flat sign
+% →	266E ♮ music natural sign
+% →	266F ♯ music sharp sign
+
 \header {
     title = "There Will Never Be Another You"
     composer = "Leo Bottoni - analysis"
@@ -51,18 +55,17 @@ timing = {
       \new Voice = "aligner" {
           \timing
       }
-
     }
 
     \new Lyrics \lyricmode {
-       "I"   ""  ""  ""  "ii/vi" ""  "V/vi" ""
-       "vi"  ""  ""  ""  "ii/IV" ""   "V/IV" ""
-       "IV"  ""  "?" ""  "I"     ""   "ii/V" ""
-       "V/V" ""  ""  ""  "?"     ""   "?" ""
-       "?"   ""  ""  ""  "?"     ""   "?" ""
-       "?"   ""  ""  ""  "?"     ""   "?" ""
-       "?"   ""  "?" ""  "?"     ""   "?" "?"
-       "?"   "?" "?" "?" "?"     "?"  "?"  "?"
+       "?"  ""  ""     ""  "?" ""  "?"  ""
+       "?"  ""  ""     ""  "?" ""   "?" ""
+       "?"  ""  "?"    ""  "?" ""   "?" ""
+       "?"  ""  ""     ""  "?" ""   "?" ""
+       "?"  ""  ""     ""  "?" ""   "?" ""
+       "?"  ""  ""     ""  "?" ""   "?" ""
+       "?"  ""  "?"    ""  "?" ""   "?" "?"
+       "?"  "?" "?"    "?" "?" "?"  "?" "?"
     }
   >>
 }
