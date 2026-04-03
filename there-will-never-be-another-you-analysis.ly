@@ -22,17 +22,6 @@ allChords   =   \chordmode   {
     f2:min7      bes2:7   ees2         bes2:7
 }
 
-timing = {
-  s1 s1 s1 s1 \break
-  s1 s1 s1 s1 \break
-  s1 s1 s1 s1 \break
-  s1 s1 s1 s1 \break
-  s1 s1 s1 s1 \break
-  s1 s1 s1 s1 \break
-  s1 s1 s1 s2 s2 \break
-  s2 s2 s2 s2 s2 s2 s2 s2
-}
-
 \paper {
     system-system-spacing = #'(
         (basic-distance . 15)
@@ -53,19 +42,26 @@ timing = {
       \override StaffSymbol.line-count = #0
 
       \new Voice = "aligner" {
-          \timing
+          s1 s1 s1 s1 \break
+          s1 s1 s1 s1 \break
+          s1 s1 s1 s1 \break
+          s1 s1 s1 s1 \break
+          s1 s1 s1 s1 \break
+          s1 s1 s1 s1 \break
+          s1 s1 s1 s2 s2 \break
+          s2 s2 s2 s2 s2 s2 s2 s2
       }
     }
 
     \new Lyrics \lyricmode {
-       "?"  ""  ""     ""  "?" ""  "?"  ""
-       "?"  ""  ""     ""  "?" ""   "?" ""
-       "?"  ""  "?"    ""  "?" ""   "?" ""
-       "?"  ""  ""     ""  "?" ""   "?" ""
-       "?"  ""  ""     ""  "?" ""   "?" ""
-       "?"  ""  ""     ""  "?" ""   "?" ""
-       "?"  ""  "?"    ""  "?" ""   "?" "?"
-       "?"  "?" "?"    "?" "?" "?"  "?" "?"
+       "I"   _     _     _ "ii/iv"           _ "V/vi" _
+       "vi " _     _     _ "ii/IV"           _ "V/IV" _
+       "IV"  _ "?" _ "I" _ "ii/V"           _
+       "V/V" _     _     _ "ii"              _ "V"    _
+       "I"   _     _     _ "ii/iv"           _ "V/vi" _
+       "vi"  _     _     _ "ii/IV"           _ "V/IV" _
+       "IV"  _ "?" _ "I" _ "ii/III"  "V/III"
+       "I"  "V/iii" "ii/II" "V/II" "ii" "V" "I"  "V"
     }
   >>
 }
