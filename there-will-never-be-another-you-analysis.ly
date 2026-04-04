@@ -4,6 +4,19 @@
 % →	266E ♮ music natural sign
 % →	266F ♯ music sharp sign
 
+\layout {
+  \context {
+    \Lyrics
+    \override LyricSpace.minimum-distance = #0.1
+  }
+  \context {
+    \Voice
+    \override Stem.transparent = ##t
+    \override NoteHead.style = #'slash
+    \override NoteHead.font-size = #1
+    \override NoteHead.staff-position = #1
+  }
+}
 \header {
     title = "There Will Never Be Another You"
     composer = "Leo Bottoni - analysis"
@@ -22,22 +35,30 @@ allChords   =   \chordmode   {
     f2:min7      bes2:7   ees2         bes2:7
 }
 
-spacers = {
-  s1 s1 s1 s1 \break
-  s1 s1 s1 s1 \break
-  s1 s1 s1 s1 \break
-  s1 s1 s1 s1 \break
-  s1 s1 s1 s1 \break
-  s1 s1 s1 s1 \break
-  s1 s1 s1 s2 s2 \break
-  s2 s2 s2 s2 s2 s2 s2 s2
+timing = {
+    \improvisationOn
+    b'4 b' b' b' | b' b' b' b'
+    b'4 b' b' b' | b' b' b' b' \break
+    b'4 b' b' b' | b' b' b' b'
+    b'4 b' b' b' | b' b' b' b' \break
+    b'4 b' b' b' | b' b' b' b'
+    b'4 b' b' b' | b' b' b' b' \break
+    b'4 b' b' b' | b' b' b' b'
+    b'4 b' b' b' | b' b' b' b' \break
+    b'4 b' b' b' | b' b' b' b'
+    b'4 b' b' b' | b' b' b' b' \break
+    b'4 b' b' b' | b' b' b' b'
+    b'4 b' b' b' | b' b' b' b' \break
+    b'4 b' b' b' | b' b' b' b'
+    b'4 b' b' b' | b' b' b' b' \break
+    b'4 b' b' b' | b' b' b' b'
+    b'4 b' b' b' | b' b' b' b' \break
+    
 }
 
 \paper {
     system-system-spacing = #'(
-        (basic-distance . 15)
-        (minimum-distance . 8)
-        (padding . 10)
+        (padding . 9)
         (stretchability . 60)
     )
 }
@@ -52,18 +73,18 @@ spacers = {
       \time 4/4
       \override StaffSymbol.line-count = #0
 
-      \new Voice = "aligner" \spacers 
+      \new Voice = "aligner" \timing 
     }
 
     \new Lyrics \lyricmode {
-       "I"   _        _     _ "ii/VI"           _ "V/VI" _
-       "vi " _        _     _ "ii/IV"           _ "V/IV" _
-       "IV"  _ "♭VII" _ "I" _ "ii/V"            _
-       "V/V" _        _     _ "ii"              _ "V"    _
-       "I"   _        _     _ "ii/VI"           _ "V/VI" _
-       "vi"  _        _     _ "ii/IV"           _ "V/IV" _
-       "IV"  _ "♭VII" _ "I" _ "ii/III"  "V/III"
-       "I"  "V/iii" "ii/II" "V/II" "ii" "V" "I"  "V"
+       "I"   _ _ _        _ _ _     _ "ii/VI" _  _          _ "V/VI"  _  _  _
+       "vi " _ _ _        _ _ _     _ "ii/IV" _  _          _ "V/IV"  _  _  _
+       "IV"  _ _ _ "♭VII" _ _ _ "I" _         _  _ "ii/V"   _         _  _
+       "V/V" _ _ _        _ _ _     _ "ii"    _  _          _ "V"     _  _  _
+       "I"   _ _ _        _ _ _     _ "ii/VI" _  _          _ "V/VI"  _  _  _
+       "vi"  _ _ _        _ _ _     _ "ii/IV" _  _          _ "V/IV"  _  _  _
+       "IV"  _ _ _ "♭VII" _ _ _ "I" _         _  _ "ii/III" _ "V/III" _
+       "I"   _ "V/iii" _ "ii/II" _ "V/II" _ "ii" _ "V" _ "I" _ "V"
     }
   >>
 }
