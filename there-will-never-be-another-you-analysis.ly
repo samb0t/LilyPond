@@ -79,11 +79,11 @@ timing = {
     \new Lyrics \lyricmode {
        "I"   _ _ _ _ _ _ _ "ii/VI" _ _ _ "V/VI" _ _ _
        "vi " _ _ _ _ _ _ _ "ii/IV" _ _ _ "V/IV" _ _ _
-       "IV"  _ _ _ "♭VII" _ _ _ "I" _ _ _ "ii/V" _ _ _
+       "IV"  _ _ _ "♭VII7" _ _ _ "I" _ _ _ "ii/V" _ _ _
        "V/V" _ _ _ _ _ _ _ "ii" _ _ _ "V" _ _ _
        "I"   _ _ _ _ _ _ _ "ii/VI" _ _ _ "V/VI" _ _ _
        "vi"  _ _ _ _ _ _ _ "ii/IV" _ _ _ "V/IV" _ _ _
-       "IV"  _ _ _ "♭VII" _ _ _ "I" _ _ _ "ii/III" _ "V/III" _
+       "IV"  _ _ _ "♭VII7" _ _ _ "I" _ _ _ "ii/III" _ "V/III" _
        "I"   _ "V/III" _ "ii/II" _ "V/II" _ "ii" _ "V" _ "I" _ "V"
     }
   >>
