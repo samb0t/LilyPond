@@ -1,14 +1,6 @@
 \version "2.24.2"
 
-% →	266D ♭ music flat sign
-% →	266E ♮ music natural sign
-% →	266F ♯ music sharp sign
-
 \layout {
-  \context {
-    \Lyrics
-    \override LyricSpace.minimum-distance = #0.1
-  }
   \context {
     \Voice
     \override Stem.transparent = ##t
@@ -17,6 +9,7 @@
     \override NoteHead.staff-position = #1
   }
 }
+
 \header {
     title = "There Will Never Be Another You"
     composer = "Leo Bottoni - analysis"
@@ -58,8 +51,7 @@ timing = {
 
 \paper {
     system-system-spacing = #'(
-        (padding . 9)
-        (stretchability . 60)
+        (padding . 8)
     )
 }
 
@@ -71,8 +63,6 @@ timing = {
       \clef "treble"
       \key ees \major
       \time 4/4
-      \override StaffSymbol.line-count = #0
-
       \new Voice = "aligner" \timing 
     }
 
